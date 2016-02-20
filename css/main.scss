@@ -1,0 +1,82 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "variables",
+        "base"
+;
+
+body{
+  background-color:$white;
+  color:$navy;
+  //border-left:2rem solid $red;
+}
+.story{
+  //margin-top:2em;
+  margin-bottom:3rem;
+}
+.number{
+  font-family:$condensed-font-family;
+  font-size:8rem;
+  @include breakpoint(m) {
+    font-size:12rem;
+  };
+  @include breakpoint(l) {
+    font-size:14rem;
+  };
+  @include breakpoint(xl) {
+    font-size:16rem;
+  };
+  color:$red;
+  line-height:.875;
+  margin-bottom:3rem;
+  margin-left: -.75rem;
+  letter-spacing: -.25rem;
+}
+.unit{
+  color:$red;
+  font-weight:600;
+  margin-bottom:0;
+}
+blockquote{
+  background-color:$red;
+  color:$white;
+  font-size:2rem;
+  padding:4rem;
+  font-weight:600;
+}
+
+.pane{
+  //display:none;
+  //transition:.5s;
+  overflow:hidden;
+  max-height:9999px;
+  &.closed{
+    max-height:1px;
+  }
+}
+section{
+  position:relative;
+  //overflow-x:hidden;
+}
+#WhatIsBB{
+  //color:$white;
+  //background-color:$navy;
+}
+
+.average-line{
+  @include breakpoint(l) {
+    width:100%;
+    border-top: 1px dotted $navy;
+  };
+}
+.fundraiser-name{
+  transform:rotate(90deg);
+  transform-origin: 6% 75%;
+  @include breakpoint(xl) {
+    transform:rotate(45deg);
+    transform-origin: 20% 200%;
+  };
+}
