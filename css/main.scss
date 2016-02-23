@@ -8,6 +8,41 @@
         "base"
 ;
 
+#logo-wrap{
+  border:2px solid $orange;
+}
+#logo-pizzeria{
+  top:-1.25rem;
+  @include breakpoint(m) {
+    top:-2rem;
+  };
+  h1{
+  //  font-size:5vw;
+  }
+}
+#logo-carrboro{
+  bottom:-1.5rem;
+  @include breakpoint(l) {
+    bottom:-1.75rem;
+  };
+}
+#hours-line{
+  max-width:17rem;
+  @include breakpoint(m) {
+    max-width:48rem;
+  };
+}
+.garland-icon{
+  display:none;
+  @include breakpoint(s) {
+    display:inline-block;
+    width:3rem;
+  };
+  @include breakpoint(l) {
+    width:5rem;
+  };
+
+}
 body{
   background-color:$white;
   color:$navy;
@@ -66,12 +101,6 @@ section{
   //background-color:$navy;
 }
 
-.average-line{
-  @include breakpoint(l) {
-    width:100%;
-    border-top: 1px dotted $navy;
-  };
-}
 .fundraiser-name{
   transform:rotate(90deg);
   transform-origin: 6% 75%;
