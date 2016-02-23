@@ -19,11 +19,15 @@
   h1{
     >span{
       display:inline-block;
-      width: 14rem;
-      height:3.5rem;
+      width: 9rem;
+      height: 2.5rem;
       padding:0 1rem;
       border-right:1.5rem solid $charcoal;
       border-left: 1.5rem solid $charcoal;
+      @include breakpoint(m) {
+        width: 14rem;
+        height:3.5rem;
+      };
       //border-radius: 50%;
       //transform: rotate(-50deg);
       position:relative;
