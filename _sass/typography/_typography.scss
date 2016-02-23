@@ -12,6 +12,10 @@ $heading-font-family: 'canada-type-gibson', -apple-system, BlinkMacSystemFont,
 
 $condensed-font-family:'alternate-gothic-no-1-d', "Roboto Condensed", "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
 
+.condensed{
+  font-family:$condensed-font-family;
+  font-weight:normal!important;
+}
 /* Basscss Type Scale */
 // Font Scale    e.g.
 $h1: 2rem;    // 32px
