@@ -1586,6 +1586,38 @@ td {
   @media screen and (min-width: 48em) {
     #logo-pizzeria {
       top: -2rem; } }
+  #logo-pizzeria h1 > span {
+    display: inline-block;
+    width: 14rem;
+    height: 3.5rem;
+    padding: 0 1rem;
+    border-right: 1.5rem solid #2e2a25;
+    border-left: 1.5rem solid #2e2a25;
+    position: relative;
+    margin: 0 auto; }
+    #logo-pizzeria h1 > span > span {
+      height: 12.5em;
+      position: absolute;
+      width: 5.5em;
+      left: 0;
+      top: -.3em;
+      transform-origin: bottom center; }
+    #logo-pizzeria h1 > span .char-1 {
+      transform: rotate(-12deg); }
+    #logo-pizzeria h1 > span .char-2 {
+      transform: rotate(-9deg); }
+    #logo-pizzeria h1 > span .char-3 {
+      transform: rotate(-6deg); }
+    #logo-pizzeria h1 > span .char-4 {
+      transform: rotate(-2deg); }
+    #logo-pizzeria h1 > span .char-5 {
+      transform: rotate(2deg); }
+    #logo-pizzeria h1 > span .char-6 {
+      transform: rotate(6deg); }
+    #logo-pizzeria h1 > span .char-7 {
+      transform: rotate(9.25deg); }
+    #logo-pizzeria h1 > span .char-8 {
+      transform: rotate(12.5deg); }
 
 #logo-carrboro {
   bottom: -1.5rem; }
