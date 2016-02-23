@@ -17,7 +17,34 @@
     top:-2rem;
   };
   h1{
-  //  font-size:5vw;
+    >span{
+      display:inline-block;
+      width: 14rem;
+      height:3.5rem;
+      padding:0 1rem;
+      border-right:1.5rem solid $charcoal;
+      border-left: 1.5rem solid $charcoal;
+      //border-radius: 50%;
+      //transform: rotate(-50deg);
+      position:relative;
+      margin:0 auto;
+      >span{
+      height: 12.5em;
+      position: absolute;
+      width: 5.5em;
+      left: 0;
+      top: -.3em;
+      transform-origin: bottom center;
+      }
+      .char-1{transform:rotate( -12deg);}
+      .char-2{transform:rotate( -9deg);}
+      .char-3{transform:rotate( -6deg);}
+      .char-4{transform:rotate( -2deg);}
+      .char-5{transform:rotate( 2deg);}
+      .char-6{transform:rotate( 6deg);}
+      .char-7{transform:rotate( 9.25deg);}
+      .char-8{transform:rotate( 12.5deg);}
+    }
   }
 }
 #logo-carrboro{
@@ -43,6 +70,10 @@
   };
 
 }
+
+
+
+
 body{
   background-color:$white;
   color:$navy;
