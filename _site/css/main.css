@@ -1581,6 +1581,13 @@ td {
 #logo-wrap {
   border: 2px solid #eb6852; }
 
+#logo-texture {
+  top: 2em;
+  bottom: 0;
+  left: 4.5em;
+  right: 4.5em;
+  opacity: .8; }
+
 #logo-pizzeria {
   top: -1.25rem; }
   @media screen and (min-width: 48em) {
